@@ -32,6 +32,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Usually this is not overridden. Using the "did finish launching" method is more typical
         print("App Delegate: will finish launching")
         
+        
+        
         return true
     }
     
@@ -39,6 +41,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         print("App Delegate: did finish launching")
+        
+        configureSlider()
         
         return true
     }
