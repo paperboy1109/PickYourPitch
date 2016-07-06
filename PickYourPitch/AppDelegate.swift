@@ -13,6 +13,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
+    func configureSlider() {
+        
+        let SliderValueKey = "Slider Value Key"
+        let previousUseKey = "App Prior Launch Key"
+        
+        if NSUserDefaults.standardUserDefaults().boolForKey(previousUseKey) {
+                print("The app has been used before")
+        } else {
+            NSUserDefaults.standardUserDefaults().setBool(true, forKey: previousUseKey)
+            NSUserDefaults.standardUserDefaults().setValue(0.0, forKey: SliderValueKey)
+            NSUserDefaults.standardUserDefaults().synchronize()
+        }
+        
+    }
+    
     func application(application: UIApplication, willFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Usually this is not overridden. Using the "did finish launching" method is more typical
         print("App Delegate: will finish launching")

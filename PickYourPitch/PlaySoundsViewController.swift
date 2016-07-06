@@ -32,14 +32,17 @@ class PlaySoundsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        /*
         if let previousSliderPosition = NSUserDefaults.standardUserDefaults().valueForKey(SliderValueKey) {
             if let previousSliderPosition = previousSliderPosition as? Float {
                 sliderView.value = previousSliderPosition
             }
         } else {
             sliderView.value = 0.0
-        }
+        } */
+        
+        let previousSliderPosition = NSUserDefaults.standardUserDefaults().valueForKey(SliderValueKey) as! Float
+        sliderView.value = previousSliderPosition
         
         
         do {
