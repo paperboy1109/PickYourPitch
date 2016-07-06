@@ -81,12 +81,10 @@
 		4D37A7781A5B089600294894 /* PickYourPitch */ = {
 			isa = PBXGroup;
 			children = (
-				4D37A79B1A5B095200294894 /* PlaySoundsViewController.swift */,
-				4D37A79C1A5B095200294894 /* RecordedAudio.swift */,
-				4D37A79D1A5B095200294894 /* RecordSoundsViewController.swift */,
 				4D37A77B1A5B089600294894 /* AppDelegate.swift */,
-				4D37A77F1A5B089600294894 /* Main.storyboard */,
-				4D37A7821A5B089600294894 /* Images.xcassets */,
+				4E3863361D2D73E80083C5CB /* Assets */,
+				4E3863351D2D73D40083C5CB /* Model */,
+				4E3863341D2D73C30083C5CB /* Controller */,
 				4D37A7841A5B089600294894 /* LaunchScreen.xib */,
 				4D37A7791A5B089600294894 /* Supporting Files */,
 			);
@@ -116,6 +114,32 @@
 				4D37A7901A5B089600294894 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4E3863341D2D73C30083C5CB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4D37A79D1A5B095200294894 /* RecordSoundsViewController.swift */,
+				4D37A79B1A5B095200294894 /* PlaySoundsViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4E3863351D2D73D40083C5CB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4D37A79C1A5B095200294894 /* RecordedAudio.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4E3863361D2D73E80083C5CB /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				4D37A77F1A5B089600294894 /* Main.storyboard */,
+				4D37A7821A5B089600294894 /* Images.xcassets */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
